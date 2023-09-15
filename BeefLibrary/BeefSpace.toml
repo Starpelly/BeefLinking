@@ -1,0 +1,20 @@
+FileVersion = 1
+Projects = {BeefLibrary = {Path = "."}}
+
+[Workspace]
+StartupProject = "BeefLibrary"
+
+[[Workspace.DistinctOptions]]
+Filter = ""
+ReflectAlwaysInclude = "IncludeAll"
+
+[Configs.Debug.Win64]
+AllocType = "CRT"
+RuntimeChecks = false
+EmitDynamicCastCheck = false
+EnableObjectDebugFlags = false
+EmitObjectAccessCheck = false
+AllowHotSwapping = false
+
+[Configs.Test.Win64]
+AllocType = "CRT"
